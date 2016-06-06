@@ -23,7 +23,6 @@
 
 - (void)awakeFromNib
 {
-    NSLog(@"awake from nib  ");
     self.placeholder = @"hello ";
     self.holderColor = [UIColor redColor];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(titleChanged) name:UITextViewTextDidChangeNotification object:nil];
@@ -38,8 +37,9 @@
             CGFloat width = rect.size.width;
             CGFloat height = rect.size.height;
             CGRect placerRect = CGRectMake(5, 8, width, height);
+            UIFont *font = [UIFont systemFontOfSize:15];
             UIColor *holderColor = self.holderColor == nil?[UIColor grayColor]:self.holderColor;
-            NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:holderColor,NSForegroundColorAttributeName, nil];
+            NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:holderColor,NSForegroundColorAttributeName,font,NSFontAttributeName, nil];
             [self.placeholder drawInRect:placerRect withAttributes:attributes];
         }else{
             return;
