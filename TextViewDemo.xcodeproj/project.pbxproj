@@ -13,6 +13,7 @@
 		BEA01F131D0506AA0056A5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA01F111D0506AA0056A5EB /* Main.storyboard */; };
 		BEA01F151D0506AA0056A5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA01F141D0506AA0056A5EB /* Assets.xcassets */; };
 		BEA01F181D0506AA0056A5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA01F161D0506AA0056A5EB /* LaunchScreen.storyboard */; };
+		BEA01F251D0507270056A5EB /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA01F241D0507270056A5EB /* CustomTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		BEA01F141D0506AA0056A5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEA01F171D0506AA0056A5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEA01F191D0506AA0056A5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA01F231D0507270056A5EB /* CustomTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
+		BEA01F241D0507270056A5EB /* CustomTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		BEA01F071D0506AA0056A5EB /* TextViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA01F221D0507270056A5EB /* view */,
 				BEA01F0B1D0506AA0056A5EB /* AppDelegate.h */,
 				BEA01F0C1D0506AA0056A5EB /* AppDelegate.m */,
 				BEA01F0E1D0506AA0056A5EB /* ViewController.h */,
@@ -77,6 +81,15 @@
 				BEA01F091D0506AA0056A5EB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEA01F221D0507270056A5EB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BEA01F231D0507270056A5EB /* CustomTextView.h */,
+				BEA01F241D0507270056A5EB /* CustomTextView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				BEA01F101D0506AA0056A5EB /* ViewController.m in Sources */,
 				BEA01F0D1D0506AA0056A5EB /* AppDelegate.m in Sources */,
+				BEA01F251D0507270056A5EB /* CustomTextView.m in Sources */,
 				BEA01F0A1D0506AA0056A5EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
